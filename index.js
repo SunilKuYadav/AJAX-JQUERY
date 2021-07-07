@@ -7,6 +7,7 @@
 // /users	10 users
 
 $('#tablebutton').click( () => {
+    $('.user-data td').remove();
     $.ajax({
         url: 'https://jsonplaceholder.typicode.com/users', //API URL
         type: 'GET', // GET OR POST,
